@@ -1,10 +1,12 @@
-#include <stdio.h>
-#include "./max.h"
+int max(int arr[], int lenght){
+    int indexMax = 0;
+    for (int i = 0; i < lenght; i++){
 
-int arr[4] = {23, 6, 15, 7};
-int main (){
-    printf("Max Value: %d\n",arr[max(arr,4)]);
-    return 0;
-}
+        if (arr[i] > arr[indexMax]){
+            indexMax = i;
+        };
+    };
+    return indexMax;
+};
 
 

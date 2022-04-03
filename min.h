@@ -1,8 +1,10 @@
-#include <stdio.h>
-#include "./min.h"
+int min(int arr[], int lenght){
+    int indexMin = 0;
+    for (int i = 0; i < lenght; i++){
 
-int arr[4] = {23, 6, 15, 7};
-int main (){
-    printf("Min Value: %d\n",arr[min(arr,4)]);
-    return 0;
-}
+        if (arr[i] < arr[indexMin]){
+            indexMin = i;
+        };
+    };
+    return indexMin;
+};
