@@ -1,4 +1,4 @@
-int max(int arr[], int lenght){
+int max (int arr[], int lenght){
     int indexMax = 0;
     for (int i = 0; i < lenght; i++){
 
