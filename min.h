@@ -1,4 +1,4 @@
-int min(int arr[], int lenght){
+int min (int arr[], int lenght){
     int indexMin = 0;
     for (int i = 0; i < lenght; i++){
 
