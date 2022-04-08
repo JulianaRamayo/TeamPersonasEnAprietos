@@ -1,22 +1,18 @@
-void sorting(int arr[], int lenght)
-{
-    int a;
-    int b;
-    for (int x = 0; x < lenght; x++)
-    {
-        for (int i = 0; i < lenght; i++)
-        {
-            a = arr[i];
-            b = arr[i + 1];
-            if (a > b)
-            {
-                arr[i + 1] = a;
-                arr[i] = b;
+void sorting(int array[], int lenght){
+    int i;
+    int j;
+    int temp;
+       for (i = 0; i < lenght; i ++){
+        for (j = 0; j < lenght - 1; j ++){
+            if (array[j] > array[j + 1]){
+                temp = array[j];
+                array[j] = array[j + 1];
+                array[j + 1] = temp;
             }
         }
+        printf("%d", array[i]);   
+        if(i<2){
+            printf(", ");
+            }
     }
-    for (int i = 0; i < lenght; i++)
-    {
-        printf(" %d ",arr[i]);
-    }
-}
+} 
